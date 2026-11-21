@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+.idea/
+/pdfs/
+/extracted/
+/_test_out/
+/demo-input/
+/demo-output/
+*.[pP][dD][fF]
+*.xlsx
