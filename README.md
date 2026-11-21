@@ -1,6 +1,6 @@
 # Materials Paper Extractor
 
-Screen materials research PDFs for candidate thermal and mechanical property data. The extractor runs locally and records the source paper and page alongside each result.
+Extract tables and figures from research PDFs, with specialized screening for thermal and mechanical properties in materials science. The extractor runs locally and records the source paper and page alongside each result.
 
 ## Install and run
 
@@ -18,6 +18,18 @@ python extract_pdfs.py --pdf-dir pdfs --out-dir extracted
 If your PDFs are already in another folder, pass its path to `--pdf-dir`. Put paths containing spaces in quotes. For a new batch, choose a fresh `--out-dir` to keep its files together.
 
 ## Verify extracted results
+
+The Excel workbook contains five sheets.
+
+| Sheet | What it contains |
+| --- | --- |
+| Summary | One row per PDF with its extraction status and counts. |
+| Values | Sentences containing a recognized materials property and candidate values with units. |
+| Property tables | Rows from tables flagged by the property rules, with links to the corresponding PNG and CSV. |
+| Table captions | Detected table numbers, captions, and PDF page numbers. |
+| Figures | Detected figure captions and links to the saved PNGs. Numeric values plotted in figures require manual digitization. |
+
+Every detected table is saved as a separate CSV in `tables/`, which you can open in Excel. This includes tables that do not appear in the **Property tables** sheet. Table and figure detection can also be used on papers from other fields. The **Values** and **Property tables** sheets use materials-specific screening rules.
 
 - Open `extraction_results.xlsx` and check the **Summary** sheet for papers that need manual review.
 - Use **Property tables** to open the matching PNG and CSV. Review notes identify reconstructed columns and missing captions.
