@@ -4,14 +4,18 @@ Screen materials research PDFs for candidate thermal and mechanical property dat
 
 ## Install and run
 
-Use Python 3.10 or newer.
+1. Clone or download this repository and open a terminal in the folder containing `extract_pdfs.py`.
+2. Create a folder named `pdfs` next to `extract_pdfs.py` and put your research PDFs inside it. Subfolders are supported.
+3. With Python 3.10 or newer, run these commands from the project folder.
 
 ```sh
 python -m pip install -r requirements.txt
 python extract_pdfs.py --pdf-dir pdfs --out-dir extracted
 ```
 
-Input folders may contain subfolders. For a new batch, choose a fresh output directory to keep its files together.
+4. Open `extracted/extraction_results.xlsx` and start with the **Summary** sheet. Use **Property tables** and **Figures** to open the linked crops.
+
+If your PDFs are already in another folder, pass its path to `--pdf-dir`. Put paths containing spaces in quotes. For a new batch, choose a fresh `--out-dir` to keep its files together.
 
 ## Verify extracted results
 
