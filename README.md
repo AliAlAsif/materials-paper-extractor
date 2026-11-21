@@ -33,3 +33,9 @@ python extract_pdfs.py --pdf-dir demo-input --out-dir demo-output
 The demo contains a ruled tensile-property table, a yield-strength sentence, and an illustrative figure. All values are fictional. Journal PDFs and generated output stay local.
 
 See [Read_me.txt](Read_me.txt) for more extraction settings.
+
+## Ownership and license
+
+Copyright © 2026 [ASk (@AliAlAsif)](https://github.com/AliAlAsif), project owner and maintainer.
+
+The project source code is licensed under the [GNU Affero General Public License v3.0](LICENSE) (`AGPL-3.0-only`). Third-party dependencies and source papers retain their own terms.

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 ASk (@AliAlAsif)
+# SPDX-License-Identifier: AGPL-3.0-only
+
 """Generate a fictional materials paper for a local extraction demo."""
 
 from pathlib import Path

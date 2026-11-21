@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 ASk (@AliAlAsif)
+# SPDX-License-Identifier: AGPL-3.0-only
+
 """
 Paper data extractor v2  (runs on your computer, uses no Claude usage)
 
